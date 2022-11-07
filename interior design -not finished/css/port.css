@@ -1,0 +1,146 @@
+.port__container {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1330px) {
+    .port__container {
+        padding: 0 20px;
+    }
+}
+
+.main__port-hero {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.port__all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.port__card {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1330px) {
+    .port__card {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    .port__card-img {
+        width: 100%;
+    }
+}
+
+.port__card-bg {
+    position: relative;
+}
+
+.port__card-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.port__card-link:hover .port__card-bg::after {
+    opacity: .7;
+}
+
+.port__card-link:focus .port__card-bg::after {
+    opacity: .7;
+}
+
+.port__card-hero {
+    position: absolute;
+    bottom: 150px;
+    left: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0;
+    color: var(--black);
+    z-index: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.port__card-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.port__card-hero:hover::after {
+    opacity: 1;
+}
+
+.port__card-link:hover .port__card-hero {
+    opacity: 1;
+}
+
+.port__card-link:focus .port__card-hero {
+    opacity: 1;
+}
+
+@media (max-width: 1400px) {
+    .port__card-hero {
+        font-size: 14px;
+    }
+}
+
+.port__card-link:hover .port__card-hero {
+    opacity: 1;
+}
+
+.port__card-link:focus .port__card-hero {
+    opacity: 1;
+}
+
+.port__card-hero-link {
+    position: absolute;
+    display: inline-block;
+    bottom: 125px;
+    left: 40px;
+    font-size: 12px;
+    color: var(--black);
+    opacity: .7;
+}
+
+.port__card-hero-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.port__card-hero-link:hover::after {
+    opacity: .7;
+}
+
+.port__object {
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+.port__card-link:hover .port__object {
+    opacity: 1;
+}

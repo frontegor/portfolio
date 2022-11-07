@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'Reforma';
+    src: local('Reforma Grotesk Medium'), local('Reforma-Grotesk-Medium'), url('../fonts/ReformaGroteskMedium.woff2') format('woff2'), url('../fonts/ReformaGroteskMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --white: #fff;
+    --red: #DB3138;
+}
+
+.body {
+    font-family: 'Reforma', sans-serif, Arial, Helvetica, sans-serif;
+    background-color: #1E1E1E;
+    width: 100%;
+    min-width: 320px;
+}
+
+.header {
+    padding-top: 40px;
+    margin-bottom: 150px;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.bg {
+    background-image: url(../img/car-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+}
+
+.header__link {
+    font-size: 24px;
+    letter-spacing: 3%;
+    color: var(--white);
+    transition: color .3s ease-in-out;
+}
+
+.header__link:hover {
+    color: var(--red);
+}
+
+
+/* 
+
+
+
+
+*/
+
+.basis {
+    margin-bottom: 180px;
+}
+
+.basis__container {
+    text-align: center;
+}
+
+.basis__hero {
+    font-size: 150px;
+    font-weight: 900;
+    color: var(--red);
+    margin-bottom: 40px;
+}
+
+.basis__romb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.basis__romb-red {
+    width: 10px;
+    height: 10px;
+    background-color: var(--red);
+    transform: rotate(45deg);
+    margin-right: 30px;
+}
+
+.basis__romb-red:last-child {
+    margin-right: unset;
+}
+
+.basis__descr {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 55px;
+}
+
+.basis__btn {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: var(--white);
+    background: transparent;
+    border: unset;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+.basis__btn::after {
+    position: absolute;
+    content: '';
+    top: -17px;
+    left: -25px;
+    width: 110px;
+    height: 60px;
+    background-color: var(--red);
+    z-index: -1;
+    transition: left .3s ease-in-out;
+}
+
+.basis__btn:hover::after {
+    left: 35px;
+}
+
+.basis__contacts-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+}
+
+.basis__contacts {
+    align-self: center;
+    width: 33.3%;
+}
+
+.basis__contacts-hero {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.basis__contacts-descr {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    color: var(--red);
+    width: 71%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.basis__contacts-tel {
+    display: flex;
+    flex-direction: column;
+}
+
+.basis__contacts-tel-link {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--red);
+    margin-bottom: 15px;
+    transition: color .3s ease-in-out;
+}
+
+.basis__contacts-tel-link:hover {
+    color: var(--white);
+}
+
+.basis__contacts-tel-link:last-child {
+    margin-bottom: unset;
+}
+
+.basis__contacts-mode {
+    display: flex;
+    flex-direction: column;
+}
+
+.basis__contacts-mode-descr {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--red);
+    margin-bottom: 15px;
+}
+
+.basis__contacts-mode-descr:last-child {
+    margin-bottom: unset;
+}
+
+.basis__line {
+    height: 215px;
+    width: 1px;
+    background-color: var(--white);
+}
+
+
+/* 
+
+
+
+
+
+*/
+
+.progress {
+    margin-bottom: 180px;
+}
+
+.progress__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__content {
+    width: 68%;
+    margin-right: 29px;
+}
+
+.progress__hero {
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.3;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+.progress__romb {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.progress__romb-red {
+    width: 10px;
+    height: 10px;
+    background-color: var(--red);
+    transform: rotate(45deg);
+    margin-right: 30px;
+}
+
+.progress__romb-red:last-child {
+    margin-right: unset;
+}
+
+.progress__descr {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.progress__flex {
+    display: flex;
+}
+
+.progress__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress__list-pt {
+    padding-top: 40px;
+}
+
+.progress__item {
+    text-align: center;
+    padding: 35px 30px;
+    border: 1px solid var(--white);
+}
+
+.progress__list-hero {
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.progress__list-hero-span {
+    font-size: 24px;
+}
+
+.progress__list-descr {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.progress-img {
+    margin-bottom: 26px;
+}
+
+.material {
+    margin-bottom: 180px;
+}
+
+.material__container {
+    position: relative;
+}
+
+.swiper__material-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.swiper__material-descr {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    width: 68%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--white);
+    z-index: 1;
+}
+
+.swiper__material-descr::after {
+    position: absolute;
+    content: '';
+    top: -26px;
+    left: -40px;
+    width: 350px;
+    height: 70px;
+    background-color: var(--red);
+    z-index: -1;
+}
+
+.material__swiper-button-prev::after,
+.material__swiper-button-next::after {
+    display: none;
+}
+
+.material__swiper-button-prev,
+.material__swiper-button-next {
+    width: 50px;
+    height: 50px;
+}
+
+.material__swiper-button-prev {
+    left: -100px;
+}
+
+.material__swiper-button-next {
+    right: -100px;
+}

@@ -1,0 +1,50 @@
+.karl {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.karl__container {
+    padding-left: 50px;
+}
+
+@media (max-width: 480px) {
+    .karl__container {
+        padding-left: unset;
+    }
+}
+
+.karl__hero {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.karl__descr {
+    font-size: 14px;
+    margin-bottom: 30px;
+    opacity: .6;
+    line-height: 1.5;
+}
+
+.karl__img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+    .karl__img {
+        margin-bottom: 15px;
+    }
+}
+
+.link {
+    text-align: center;
+}
+
+.karl__link {
+    font-size: 18px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}

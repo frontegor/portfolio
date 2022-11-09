@@ -55,6 +55,7 @@ html {
     font-family: 'ubuntu', sans-serif, Arial, Helvetica, sans-serif;
     width: 100%;
     min-width: 320px;
+    color: var(--dark);
 }
 
 .container {
@@ -91,4 +92,5 @@ html {
     --white: #fff;
     --black: #000;
     --dark: #0A0A0A;
+    --montserrat: 'montserrat', sans-serif, Arial, Helvetica;
 }

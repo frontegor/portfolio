@@ -3,6 +3,12 @@
     margin-bottom: 70px;
 }
 
+@media (max-width: 480px) {
+    .number {
+        margin-bottom: 50px;
+    }
+}
+
 .number__img {
     width: 100%;
 }

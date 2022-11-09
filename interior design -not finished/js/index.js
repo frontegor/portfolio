@@ -43,10 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const swiper3 = new Swiper('.order__swiper', {
+        slidesPerView: 1,
         direction: 'horizontal',
         loop: true,
         speed: 1000,
         autoplay: true,
+
     });
 
     const swiper4 = new Swiper('.contacts__swiper', {

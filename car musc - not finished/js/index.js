@@ -1,3 +1,28 @@
+const headerMenu = document.querySelector('.header__menu');
+const burger = document.querySelector('.burger');
+const line1 = document.querySelector('.line1');
+const line2 = document.querySelector('.line2');
+const line3 = document.querySelector('.line3');
+
+burger.addEventListener('click', function() {
+    headerMenu.classList.toggle('header__menu-active');
+    burger.classList.toggle('burger-active');
+    line1.classList.toggle('line1-active');
+    line2.classList.toggle('line2-active');
+    line3.classList.toggle('line3-active');
+})
+
+
+
+const progressListPt = document.querySelector('.progress__list-pt');
+const progressBtn = document.querySelector('.progress__btn');
+progressBtn.addEventListener('click', function() {
+    progressListPt.classList.add('progress__list-active');
+    progressBtn.classList.add('progress__btn-none');
+})
+
+
+
 const swiper1 = new Swiper('.material__swiper', {
     slidesPerView: 3,
     spaceBetween: 50,
@@ -9,13 +34,27 @@ const swiper1 = new Swiper('.material__swiper', {
         nextEl: '.material__swiper-button-next',
         prevEl: '.material__swiper-button-prev',
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        769: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        1401: {
+            slidesPerView: 3,
+            spaceBetween: 50
+        }
+
+    }
 });
 
 const swiper2 = new Swiper('.contaper__swiper', {
     slidesPerView: 1,
     direction: 'horizontal',
     autoplay: true,
-
     loop: true,
     navigation: {
         nextEl: '.contaper__swiper-button-next',
@@ -68,7 +107,24 @@ const swiper4 = new Swiper('.work__swiper', {
     },
     freeMode: true,
     speed: 100000,
-    freeModeMomentum: false
+    freeModeMomentum: false,
+    breakpoints: {
+        0: {
+            slidesPerView: 2
+        },
+        586: {
+            slidesPerView: 3
+        },
+        993: {
+            slidesPerView: 4
+        },
+        1201: {
+            slidesPerView: 5
+        },
+        1401: {
+            slidesPerView: 6
+        }
+    }
 });
 
 const swiper5 = new Swiper('.work__swiper2', {
@@ -86,7 +142,24 @@ const swiper5 = new Swiper('.work__swiper2', {
     },
     freeMode: true,
     speed: 100000,
-    freeModeMomentum: false
+    freeModeMomentum: false,
+    breakpoints: {
+        0: {
+            slidesPerView: 2
+        },
+        586: {
+            slidesPerView: 4
+        },
+        993: {
+            slidesPerView: 4
+        },
+        1201: {
+            slidesPerView: 5
+        },
+        1401: {
+            slidesPerView: 6
+        }
+    }
 });
 
 const swiper6 = new Swiper('.work__swiper3', {
@@ -103,5 +176,22 @@ const swiper6 = new Swiper('.work__swiper3', {
     },
     freeMode: true,
     speed: 100000,
-    freeModeMomentum: false
+    freeModeMomentum: false,
+    breakpoints: {
+        0: {
+            slidesPerView: 2
+        },
+        586: {
+            slidesPerView: 3
+        },
+        993: {
+            slidesPerView: 4
+        },
+        1201: {
+            slidesPerView: 5
+        },
+        1401: {
+            slidesPerView: 6
+        }
+    }
 });

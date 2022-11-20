@@ -1,0 +1,311 @@
+.basis__pasting {
+    margin-bottom: 180px;
+}
+
+@media (max-width: 1200px) {
+    .basis__pasting {
+        margin-bottom: 130px;
+    }
+}
+
+@media (max-width: 992px) {
+    .basis__pasting {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 585px) {
+    .basis__pasting {
+        margin-bottom: 130px;
+    }
+}
+
+.basis__pasting-container {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .basis__pasting-container {
+        padding-bottom: 80px;
+    }
+}
+
+.basis__pasting-hero {
+    width: 38%;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: var(--red);
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+    .basis__pasting-hero {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .basis__pasting-hero {
+        margin-bottom: 20px;
+    }
+}
+
+.basis__pasting-romb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.basis__pasting-romb-red {
+    width: 10px;
+    height: 10px;
+    background-color: var(--red);
+    transform: rotate(45deg);
+    margin-right: 30px;
+}
+
+.basis__pasting-romb-red:last-child {
+    margin-right: unset;
+}
+
+.basis__pasting-descr {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+    width: 37%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 55px;
+}
+
+@media (max-width: 1200px) {
+    .basis__pasting-descr {
+        font-size: 30px;
+        width: 38%;
+    }
+}
+
+@media (max-width: 768px) {
+    .basis__pasting-descr {
+        font-size: 24px;
+        width: unset;
+        margin-bottom: 50px;
+    }
+}
+
+.basis__pasting-link {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: var(--white);
+    background: transparent;
+    border: unset;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .basis__pasting-link {
+        font-size: 18px;
+    }
+}
+
+.basis__pasting-link::after {
+    position: absolute;
+    content: '';
+    top: -13px;
+    left: -38px;
+    width: 60px;
+    height: 50px;
+    background-color: var(--red);
+    z-index: -1;
+    transition: left .3s ease-in-out;
+}
+
+.basis__pasting-link:hover::after {
+    left: 20px;
+}
+
+.basis__pasting-link:focus::after {
+    left: 20px;
+}
+
+@media (max-width: 992px) {
+    .basis__pasting-link::after {
+        top: -12px;
+        left: -27px;
+        width: 80px;
+        height: 40px;
+    }
+    .basis__pasting-link:hover::after {
+        left: 45px;
+    }
+}
+
+.basis__pasting-contacts-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+}
+
+.basis__pasting-line {
+    height: 215px;
+    width: 1px;
+    background-color: var(--white);
+}
+
+@media (max-width: 1200px) {
+    .basis__pasting-contacts-flex {
+        height: 140px
+    }
+    .basis__pasting-line {
+        height: 138px;
+    }
+}
+
+@media (max-width: 585px) {
+    .basis__pasting-line {
+        display: none;
+    }
+}
+
+@media (max-width: 585px) {
+    .basis__pasting-contacts-flex {
+        padding-left: 10px;
+        text-align: unset;
+        flex-direction: column;
+        border-top: unset;
+        border-bottom: unset;
+    }
+}
+
+.basis__pasting-contacts {
+    align-self: center;
+    width: 33.3%;
+}
+
+@media (max-width: 585px) {
+    .basis__pasting-contacts {
+        align-self: unset;
+        width: 75%;
+        margin-bottom: 15px;
+    }
+}
+
+.basis__pasting-contacts-hero {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 585px) {
+    .basis__pasting-contacts-hero {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
+
+.basis__pasting-contacts-descr {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    color: var(--red);
+    width: 71%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 992px) {
+    .basis__pasting-contacts-descr {
+        width: 100%;
+    }
+}
+
+.basis__pasting-contacts-tel {
+    display: flex;
+    flex-direction: column;
+}
+
+.basis__pasting-contacts-tel-link {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--red);
+    margin-bottom: 15px;
+    transition: color .3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .basis__pasting-contacts-tel-link {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 585px) {
+    .basis__pasting-contacts-tel-link {
+        margin-bottom: 5px;
+    }
+}
+
+.basis__pasting-contacts-tel-link:hover {
+    color: var(--white);
+}
+
+.basis__pasting-contacts-tel-link:focus {
+    color: var(--white);
+}
+
+.basis__pasting-contacts-tel-link:last-child {
+    margin-bottom: unset;
+}
+
+.basis__pasting-contacts-mode {
+    display: flex;
+    flex-direction: column;
+}
+
+.basis__pasting-contacts-mode-descr {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--red);
+    margin-bottom: 15px;
+}
+
+@media (max-width: 585px) {
+    .basis__pasting-contacts-mode-descr {
+        margin-bottom: 5px;
+    }
+}
+
+.basis__pasting-contacts-mode-descr:last-child {
+    margin-bottom: unset;
+}
+
+@media (max-width: 1200px) {
+    .basis__pasting-contacts-descr,
+    .basis__pasting-contacts-tel-link,
+    .basis__pasting-contacts-mode-descr {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .basis__pasting-contacts-descr,
+    .basis__pasting-contacts-tel-link,
+    .basis__pasting-contacts-mode-descr {
+        font-size: 14px;
+    }
+}

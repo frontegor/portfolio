@@ -1,0 +1,131 @@
+.material {
+    margin-bottom: 180px;
+}
+
+@media (max-width: 1200px) {
+    .material {
+        margin-bottom: 130px;
+    }
+}
+
+@media (max-width: 992px) {
+    .material {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .material {
+        margin-bottom: 50px;
+    }
+}
+
+.material__container {
+    position: relative;
+}
+
+.material__swiper {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .material__swiper {
+        width: 70%
+    }
+}
+
+@media (max-width: 768px) {
+    .material__swiper {
+        width: 60%;
+    }
+}
+
+@media (max-width: 585px) {
+    .material__swiper,
+    .material__swiper-button-prev,
+    .material__swiper-button-next {
+        display: none;
+    }
+}
+
+.swiper__material-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.swiper__material-img {
+    width: 100%;
+}
+
+.swiper__material-descr {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    width: 68%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--white);
+    z-index: 1;
+}
+
+.swiper__material-descr::after {
+    position: absolute;
+    content: '';
+    top: -26px;
+    left: -51px;
+    width: 350px;
+    height: 70px;
+    background-color: var(--red);
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .swiper__material-descr {
+        width: 91%;
+    }
+}
+
+@media (max-width: 992px) {
+    .swiper__material-descr {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .swiper__material-descr::after {
+        top: -3px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.material__swiper-button-prev {
+    left: -100px;
+}
+
+.material__swiper-button-next {
+    right: -100px;
+}
+
+@media (max-width: 1400px) {
+    .material__swiper-button-prev {
+        left: 30px;
+    }
+    .material__swiper-button-next {
+        right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .material__swiper-button-prev {
+        left: 80px;
+    }
+    .material__swiper-button-next {
+        right: 80px;
+    }
+}

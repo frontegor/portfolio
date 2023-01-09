@@ -1,0 +1,202 @@
+.serv {
+  margin-bottom: 100px;
+}
+
+.serv__container {
+  text-align: center;
+}
+
+.serv__hero {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+.serv__descr {
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 45px;
+}
+
+.serv__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.serv__content {
+  padding: 40px 0;
+  border-radius: 10px;
+  width: 49%;
+}
+
+.serv__content svg {
+  margin-bottom: 15px;
+}
+
+
+
+.serv__content {
+  background: var(--white);
+  -webkit-transition: background .3s ease-in-out;
+  -o-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.serv__content-active {
+  background: var(--orange);
+  -webkit-transition: background .3s ease-in-out;
+  -o-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.serv__content-path {
+  fill: var(--orange);
+  -webkit-transition: fill .3s ease-in-out;
+  -o-transition: fill .3s ease-in-out;
+  transition: fill .3s ease-in-out;
+}
+
+.serv__content-path-active {
+  fill: var(--white);
+}
+
+.serv__content-hero {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 10px;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.serv__content-hero-active {
+  color: var(--white);
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+
+}
+
+.serv__content-descr {
+  width: 54%;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--black);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.serv__content-descr-active {
+  color: var(--white);
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+
+.serv__content-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--orange);
+  background: var(--white);
+  border: unset;
+  border-radius: 29px;
+  padding: 15px 30px;
+  -webkit-transition: background .3s ease-in-out, color .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+  -o-transition: background .3s ease-in-out, color .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+  transition: background .3s ease-in-out, color .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+}
+
+.serv__content-btn-active {
+  color: var(--orange);
+  background: var(--white);
+  -webkit-transition: background .3s ease-in-out, color .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+  -o-transition: background .3s ease-in-out, color .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+  transition: background .3s ease-in-out, color .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+}
+
+.serv__content-btn:focus {
+  outline: 2px solid var(--orange);
+}
+
+.serv__content-btn-active:hover {
+  outline: 2px solid var(--white);
+  outline-offset: 5px;
+}
+
+.serv__content-btn-active:focus {
+  outline: 2px solid var(--white);
+  outline-offset: 5px;
+}
+
+@media (max-width: 1200px) {
+  .serv__content-descr {
+    width: 64%;
+  }
+}
+
+@media (max-width: 992px) {
+  .serv__hero {
+    font-size: 30px;
+  }
+
+  .serv__descr {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .serv__content svg {
+    width: 17%;
+    margin-bottom: 10px;
+  }
+
+  .serv__content-hero {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .serv__content-descr {
+    width: 83%;
+    font-size: 14px;
+  }
+
+  .serv__content-btn {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .serv {
+    margin-bottom: 80px;
+  }
+
+  .serv__hero {
+    font-size: 18px;
+  }
+
+  .serv__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .serv__content {
+    width: 100%;
+  }
+
+  .serv__content:first-child {
+    margin-bottom: 20px;
+  }
+}

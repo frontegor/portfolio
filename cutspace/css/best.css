@@ -1,0 +1,130 @@
+.best {
+    margin-bottom: 100px;
+}
+
+.best__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.best__swiper {
+    width: 100%;
+    left: -10%;
+}
+
+.best__img {
+    width: 95%;
+}
+
+.best__content {
+    padding-top: 60px;
+    width: 50%;
+}
+
+.best__hero {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    color: var(--black);
+}
+
+.best__descr {
+    width: 89%;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.best__descr:nth-child(3) {
+    margin-bottom: 40px;
+}
+
+.best__btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--orange);
+    border: unset;
+    padding: 15px 30px;
+    border-radius: 29px;
+    -webkit-transition: background .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+    -o-transition: background .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+    transition: background .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
+}
+
+.best__btn:hover {
+    background: var(--aqua);
+}
+
+.best__btn:focus {
+    background: var(--aqua);
+    outline: 2px solid var(--aqua);
+    outline-offset: 3px;
+}
+
+@media (max-width: 1200px) {
+    .best__content {
+        padding-top: unset;
+        width: 69%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .best {
+        margin-bottom: 120px;
+    }
+
+    .best__content {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .best__hero {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .best__descr {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .best__img {
+        width: 99%;
+    }
+}
+
+@media (max-width: 768px) {
+    .best__btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .best {
+        margin-bottom: 80px;
+    }
+
+    .best__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .best__swiper {
+        left: unset;
+    }
+
+    .best__img {
+        width: 100%;
+    }
+
+    .best__hero {
+        width: 70%;
+    }
+}

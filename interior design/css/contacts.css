@@ -1,0 +1,208 @@
+.header__contacts {
+    border-bottom: 1px solid rgba(000, 000, 000, .2);
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .header__contacts {
+        border-bottom: unset;
+    }
+}
+
+.contacts__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .contacts__flex {
+        display: block;
+        -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+        justify-content: unset;
+    }
+}
+
+.contacts__swiper {
+    width: 65%;
+    margin-right: 70px;
+}
+
+@media (max-width: 1200px) {
+    .contacts__swiper {
+        display: none;
+    }
+}
+
+.contacts__swiper-img {
+    width: 100%;
+}
+
+.contacts__content {
+    width: 55%;
+    padding-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .contacts__content {
+        width: unset;
+        padding-left: 100px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__content {
+        padding-top: unset;
+        padding-left: 25px;
+    }
+}
+
+.contacts__links-all {
+    margin-bottom: 50px;
+}
+
+.contacts__all {
+    margin-bottom: 40px;
+}
+
+.contacts__hero {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contacts__tel,
+.contacts__mail {
+    font-size: 14px;
+    color: var(--black);
+}
+
+.contacts__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.contacts__svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.contacts__hero-form {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .contacts__hero-form {
+        font-size: 16px;
+    }
+}
+
+.contacts__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.contacts__input {
+    font-size: 14px;
+    background: transparent;
+    outline: 1px solid rgba(000, 000, 000, .2);
+    height: 40px;
+    width: 70%;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    -webkit-transition: outline .3s ease-in-out;
+    -o-transition: outline .3s ease-in-out;
+    transition: outline .3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .contacts__input {
+        width: 95%;
+    }
+}
+
+.contacts__input::-webkit-input-placeholder {
+    font-size: 10px;
+}
+
+.contacts__input::-moz-placeholder {
+    font-size: 10px;
+}
+
+.contacts__input:-ms-input-placeholder {
+    font-size: 10px;
+}
+
+.contacts__input::-ms-input-placeholder {
+    font-size: 10px;
+}
+
+.contacts__input::placeholder {
+    font-size: 10px;
+}
+
+.contacts__input-mess {
+    height: 150px;
+}
+
+.contacts__input:hover {
+    outline: 1px solid var(--black);
+}
+
+.contacts__input:focus {
+    outline: 1px solid var(--black);
+}
+
+.contacts__input:active {
+    outline: 1px solid var(--black);
+}
+
+.contacts__btn {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 20px 30px;
+    font-weight: 600;
+    width: 200px;
+    -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, outline .3s ease-in-out;
+    -o-transition: color .3s ease-in-out, background-color .3s ease-in-out, outline .3s ease-in-out;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out, outline .3s ease-in-out;
+}
+
+.contacts__btn:hover {
+    color: var(--black);
+    background-color: transparent;
+    outline: 1px solid var(--black);
+}
+
+.contacts__btn:focus {
+    color: var(--black);
+    background-color: transparent;
+    outline: 1px solid var(--black);
+}
+
+.contacts__btn:active {
+    color: var(--white);
+    background-color: var(--black);
+    outline: unset;
+}

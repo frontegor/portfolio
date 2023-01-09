@@ -1,0 +1,134 @@
+.expert {
+    background-image: url(../img/expert-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 55px;
+    margin-bottom: 100px;
+
+}
+
+.expert__container {
+    position: relative;
+}
+
+.expert__content {
+    padding-top: 165px;
+}
+
+.expert__hero {
+    width: 31%;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.expert__descr {
+    width: 24%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+.expert__btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--black);
+    background-color: var(--white);
+    border: unset;
+    border-radius: 29px;
+    padding: 15px 25px;
+    -webkit-transition: outline .3s ease-in-out, outline-offset .3s ease-in-out, color .3s ease-in-out;
+    -o-transition: outline .3s ease-in-out, outline-offset .3s ease-in-out, color .3s ease-in-out;
+    transition: outline .3s ease-in-out, outline-offset .3s ease-in-out, color .3s ease-in-out;
+}
+
+.expert__btn:hover {
+    color: var(--aqua);
+}
+
+.expert__btn:focus {
+    color: var(--aqua);
+    outline: 2px solid var(--white);
+    outline-offset: 5px;
+}
+
+
+.expert__img {
+    position: absolute;
+    width: 42%;
+    bottom: -13%;
+    right: 12%;
+}
+
+
+@media (max-width: 1200px) {
+    .expert__hero {
+        width: 51%;
+    }
+
+    .expert__descr {
+        width: 39%;
+    }
+}
+
+@media (max-width: 992px) {
+    .expert {
+        padding-bottom: 48px;
+    }
+
+    .expert__hero {
+        width: 38%;
+        font-size: 24px;
+    }
+
+    .expert__descr {
+        width: 44%;
+        font-size: 14px;
+    }
+
+    .expert__btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .expert__hero {
+        width: 44%;
+    }
+
+    .expert__descr {
+        margin-bottom: 20px;
+    }
+
+    .expert__img {
+        width: 60%;
+        right: 0;
+        bottom: -13%;
+    }
+}
+
+@media (max-width: 480px) {
+    .expert {
+        padding-bottom: 49px;
+        margin-bottom: 80px;
+    }
+
+    .expert__hero {
+        width: 63%;
+        font-size: 18px;
+    }
+
+    .expert__descr {
+        width: 61%;
+    }
+
+    .expert__img {
+        width: 55%;
+        right: -2%;
+        bottom: -13.6%;
+    }
+}
